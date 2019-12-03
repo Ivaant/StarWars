@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
 // import Container with films
+//import more identifiers
 
 
 ReactDOM.render(<body>
