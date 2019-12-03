@@ -31,19 +31,19 @@ ReactDOM.render(<body>
                     </ul>
                 </nav>
                 <main>
-                    <article class="film-item">
-                        <section class="film-info">
-                            <h3 class="film-name">
+                    <article className="film-item">
+                        <section className="film-info">
+                            <h3 classNameName="film-name">
                                 STAR WARS: THE RISE OF SKYWALKER
                 </h3>
-                            <p class="film-lead">
+                            <p className="film-lead">
                                 No one's ever really gone...
                                 Rey's journey continues and
                                 the Skywalker saga concludes in Star Wars:
                                 The Rise of Skywalker, coming December 2019.
                 </p>
                         </section>
-                        <img class="film-img" src="../resources/1-the-rise-of-skywalker.jpeg" alt="rise of skywalker" />
+                        <img className="film-img" src="../resources/1-the-rise-of-skywalker.jpeg" alt="rise of skywalker" />
         </article>
 
     </main>
