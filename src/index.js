@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 // import Container with films
 //import more identifiers
+ import logo from './resources/sw_logo.png';
+ import skyWalkerImg from './resources/1-the-rise-of-skywalker.jpeg';
 
 
 ReactDOM.render(<body>
@@ -17,7 +19,7 @@ ReactDOM.render(<body>
                     </div>
         </form>
                 <a href="#">
-                    <img src="../resources/sw_logo.png" alt="Star Wars" />
+                    <img src={logo} alt="Star Wars" />
         </a>
     </header>
 
@@ -35,7 +37,7 @@ ReactDOM.render(<body>
                 <main>
                     <article className="film-item">
                         <section className="film-info">
-                            <h3 classNameName="film-name">
+                            <h3 className="film-name">
                                 STAR WARS: THE RISE OF SKYWALKER
                 </h3>
                             <p className="film-lead">
@@ -45,7 +47,7 @@ ReactDOM.render(<body>
                                 The Rise of Skywalker, coming December 2019.
                 </p>
                         </section>
-                        <img className="film-img" src="../resources/1-the-rise-of-skywalker.jpeg" alt="rise of skywalker" />
+                        <img className="film-img" src={skyWalkerImg} alt="rise of skywalker" />
         </article>
 
     </main>
