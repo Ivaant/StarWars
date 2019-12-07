@@ -1,5 +1,5 @@
 import React from 'react';
-import './main.css';
+import './Main.css';
 
 import skyWalkerImg from '../resources/1-the-rise-of-skywalker.jpeg';
 

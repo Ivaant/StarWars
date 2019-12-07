@@ -12,6 +12,10 @@ nav ul li a {
     text-decoration: none;
 } */
 
+.file-item {
+    width: 1200px;
+}
+
 .film-info {
     display: inline-block;
     width: 600px;
