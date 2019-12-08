@@ -1,0 +1,40 @@
+.hero-item {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-item section {
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    border: solid 1px rgb(172, 172, 172);
+    text-align: left;
+    vertical-align: top;
+    background-color: rgb(59, 55, 55);
+}
+
+.hero-item h1 {
+    margin: 10px;
+}
+
+.hero-item img {
+    width: 400px;
+    vertical-align: bottom;
+}
+
+.hero-item p {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .hero-film img {
+      width: auto;
+      height: 300px;
+  }
+
+
+

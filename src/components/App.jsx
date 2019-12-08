@@ -2,19 +2,18 @@ import React from 'react';
 import Header from './Header';
 import Navigation from './Navigation';
 import Main from './Main';
+import Footer from './Footer';
 import './App.css';
 
 function App() {
     return (
-        <body>
+        <div>
             <Header />
             <Navigation />
             <Main />
-            <footer>
-
-            </footer>
-
-        </body>);
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
