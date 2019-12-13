@@ -1,17 +1,17 @@
 import React from 'react';
 import './Navigation.css';
 
-function Navigation() {
+function Navigation({ showFilmsList }) {
     return (
         <nav>
             <ul>
-                <li><a href="#">NEWS + BLOG</a></li>
-                <li><a href="#">VIDEO</a></li>
-                <li><a href="#">FILMS</a></li>
-                <li><a href="#">SERIES</a></li>
-                <li><a href="#">INTERACTIVE</a></li>
-                <li><a href="#">COMMUNITY</a></li>
-                <li><a href="#">DATABANK</a></li>
+                <li><button>NEWS + BLOG</button></li>
+                <li><button>VIDEO</button></li>
+                <li><button onClick={showFilmsList}>FILMS</button></li>
+                <li><button>SERIES</button></li>
+                <li><button>INTERACTIVE</button></li>
+                <li><button>COMMUNITY</button></li>
+                <li><button>DATABANK</button></li>
             </ul>
         </nav>);
 }

@@ -1,20 +1,27 @@
 import React from 'react';
+import HeroCell from './HeroCell';
+import BioCell from './BioCell';
+import FilmCell from './FilmCell';
 import './Card.css';
 
-function Card({ content }) {
+function Card({ key, content, isFilmsClicked }) {
+
+
+    console.dir('Card' + isFilmsClicked);
+
     return (
         <article className="hero-item">
-            <section>
-                <h1>{content.name}</h1>
-                <img src={content.pic} alt={content.name} />
-            </section>
-            <section>
-                <p>{content.bio}</p>
-            </section>
-            <section className="hero-film">
-                <h1>{content.filmName}</h1>
-                <img src={content.filmPoster} alt={content.filmName} />
-            </section>
+            <HeroCell
+                name={content.name}
+                img={content.pic}
+            />
+            <BioCell
+                content={content.bio}
+                isFilmsClicked={isFilmsClicked}
+            />
+            <FilmCell
+                films={content.films}
+            />
         </article>
     );
 }

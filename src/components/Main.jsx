@@ -2,10 +2,10 @@ import React from 'react';
 import CardList from './CardList';
 import './Main.css';
 
-function Main() {
+function Main({ isFilmsClicked }) {
     return (
         <main>
-            <CardList />
+            <CardList isFilmsClicked={isFilmsClicked} />
         </main>
     );
 }

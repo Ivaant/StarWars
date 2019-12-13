@@ -1,13 +1,12 @@
 .hero-item {
+    display: table-row;
     width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+   margin: 0px auto;
 }
 
 .hero-item section {
-    display: inline-block;
+    display: table-cell;
     width: 400px;
-    height: 350px;
     border: solid 1px rgb(172, 172, 172);
     text-align: left;
     vertical-align: top;
@@ -16,24 +15,22 @@
 
 .hero-item h1 {
     margin: 10px;
+    text-align: center;
 }
 
 .hero-item img {
+    display: block;
     width: 400px;
-    vertical-align: bottom;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-item p {
-    font-size: 1.2em;
+    font-size: 1.4rem;
     padding: 10px;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
-  }
-
-  .hero-film img {
-      width: auto;
-      height: 300px;
   }
 
 

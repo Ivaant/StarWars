@@ -1,18 +1,20 @@
 import React from 'react';
 import Card from './Card';
 import people from '../resources/people';
+import './CardList.css';
 
-const mapper = person => {
-    return (
-        <Card content={person} />
-    );
-}
 
-function CardList() {
 
+function CardList({ isFilmsClicked }) {
+
+    const mapper = (person, index) => {
+        return (
+            <Card key={index} content={person} isFilmsClicked={isFilmsClicked} />
+        );
+    }
     
     return (
-        <div>
+        <div className="table">
         {people.map(mapper)}
         </div>
     );
