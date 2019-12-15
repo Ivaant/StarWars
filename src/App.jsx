@@ -8,19 +8,18 @@ import Footer from './common/Footer';
 
 function App() {
 
-    const [isFilmsClicked, setFilmsClicked] = useState(false);
+    const [menuButtonClicked, setMenuButtonClicked] = useState("");
 
-function filmsClickHandler() {
-    setFilmsClicked(!isFilmsClicked);
-    console.log(isFilmsClicked);
-}
+    function menuClickHandler(menuButtonName) {
+        setMenuButtonClicked(menuButtonName);
+    }
 
 
     return (
         <div>
             <Header />
-            <Navigation showFilmsList={filmsClickHandler}/>
-            <Main isfilmsClicked={isFilmsClicked}/>
+            <Navigation onMenuClick={menuClickHandler} />
+            <Main menuButtonClicked={menuButtonClicked} />
             <Footer />
         </div>
     );

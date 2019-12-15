@@ -6,8 +6,6 @@ import '../../css/HeroPage.css';
 
 function HeroPage(props) {
 
-    const isFilmsClicked = props.isFilmsClicked;
-
     const mapper = (person, index) => {
         return (
             <tr key={index} className="hero-item">
@@ -17,7 +15,8 @@ function HeroPage(props) {
                 />
                 <BioCell
                     content={person.bio}
-                    isFilmsClicked={isFilmsClicked}
+                    films={person.films}
+                    menuButtonClicked={props.menuButtonClicked}
                 />
                 <FilmCell
                     film={person.films[0]}

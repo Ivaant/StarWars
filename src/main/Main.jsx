@@ -3,10 +3,13 @@ import HeroPage from './heropage/HeroPage';
 import '../css/Main.css';
 import people from '../resources/people';
 
-function Main({ isFilmsClicked }) {
+function Main(props) {
     return (
         <main>
-            <HeroPage heroes={people} isFilmsClicked={isFilmsClicked} />
+            <HeroPage
+                heroes={people}
+                menuButtonClicked={props.menuButtonClicked}
+            />
         </main>
     );
 }
