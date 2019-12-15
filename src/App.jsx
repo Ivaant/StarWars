@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Header from './Header';
-import Navigation from './Navigation';
-import Main from './Main';
-import Footer from './Footer';
-import './App.css';
+import Header from './common/Header';
+import Navigation from './common/Navigation';
+import Main from './main/Main';
+import Footer from './common/Footer';
 
 
 

@@ -2,10 +2,10 @@ import React from 'react';
 
 function HeroCell({ name, img }) {
     return (
-        <section>
+        <td>
             <h1>{name}</h1>
             <img src={img} alt={name} />
-        </section>
+        </td>
     );
 }
 

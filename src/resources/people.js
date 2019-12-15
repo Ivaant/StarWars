@@ -48,25 +48,21 @@ const people = [
         pic: "https://lumiere-a.akamaihd.net/v1/images/Darth-Vader_6bda9114.jpeg?region=0%2C23%2C1400%2C785&width=960",
         films: [
             {
-                filmName: "A New Hope",
-                filmPoster: "https://images-na.ssl-images-amazon.com/images/I/81aA7hEEykL.jpg"
-            },
-            {
                 filmName: "The Empire Strikes Back",
                 filmPoster: "https://img01.mgo-images.com/image/thumbnail/v2/content/MMVCCF63891017367FD78CD2B07A78D48FF8.jpeg"
-            },
-            {
-                filmName: "Return of the Jedi",
-                filmPoster: "https://is3-ssl.mzstatic.com/image/thumb/Video123/v4/9f/f9/e8/9ff9e804-f7f5-2a01-54a8-c476a5a884fa/pr_source.lsr/268x0w.jpg"
             },
             {
                 filmName: "Revenge of the Sith",
                 filmPoster: "https://images-na.ssl-images-amazon.com/images/I/51RHXMVH9YL._SY445_.jpg"
             },
             {
-                filmName: "The Force Awakens",
-                filmPoster: "https://images-na.ssl-images-amazon.com/images/I/91xZGOnCFSL._SY445_.jpg"
-            }
+                filmName: "Return of the Jedi",
+                filmPoster: "https://is3-ssl.mzstatic.com/image/thumb/Video123/v4/9f/f9/e8/9ff9e804-f7f5-2a01-54a8-c476a5a884fa/pr_source.lsr/268x0w.jpg"
+            },
+            {
+                filmName: "A New Hope",
+                filmPoster: "https://images-na.ssl-images-amazon.com/images/I/81aA7hEEykL.jpg"
+            },
         ]
     },
     {
@@ -83,20 +79,16 @@ const people = [
         pic: "https://gemr.com/wp-content/uploads/2018/07/leia.jpg",
         films: [
             {
-                filmName: "A New Hope",
-                filmPoster: "https://images-na.ssl-images-amazon.com/images/I/81aA7hEEykL.jpg"
-            },
-            {
-                filmName: "The Empire Strikes Back",
-                filmPoster: "https://img01.mgo-images.com/image/thumbnail/v2/content/MMVCCF63891017367FD78CD2B07A78D48FF8.jpeg"
+                filmName: "Revenge of the Sith",
+                filmPoster: "https://images-na.ssl-images-amazon.com/images/I/51RHXMVH9YL._SY445_.jpg"
             },
             {
                 filmName: "Return of the Jedi",
                 filmPoster: "https://is3-ssl.mzstatic.com/image/thumb/Video123/v4/9f/f9/e8/9ff9e804-f7f5-2a01-54a8-c476a5a884fa/pr_source.lsr/268x0w.jpg"
             },
             {
-                filmName: "Revenge of the Sith",
-                filmPoster: "https://images-na.ssl-images-amazon.com/images/I/51RHXMVH9YL._SY445_.jpg"
+                filmName: "A New Hope",
+                filmPoster: "https://images-na.ssl-images-amazon.com/images/I/81aA7hEEykL.jpg"
             },
             {
                 filmName: "The Force Awakens",

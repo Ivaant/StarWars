@@ -10,4 +10,7 @@ nav ul li {
 nav ul li button {
     color: rgb(219, 201, 201);
     text-decoration: none;
+    background: none;
+    border-width: 0px;
+    font-size: 1.4rem;
 }
