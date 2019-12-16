@@ -20,7 +20,7 @@ function HeroPage(props) {
         setFilmsToRender(prevValue => {
             return prevValue.map((heroFilm, i) => {
                 if (i === heroIndex) {
-                    return props.heroes[heroIndex].films[filmIndex];
+                    return people[heroIndex].films[filmIndex];
                 }
                 else return heroFilm;
             });
