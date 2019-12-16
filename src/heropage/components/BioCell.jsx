@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../css/HeroPage.css';
+import '../css/HeroPage.css';
 
 function BioCell({ id, content, menuButtonClicked, films, onLinkClick }) {
 

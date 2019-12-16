@@ -1,5 +1,9 @@
+header {
+    background-color: #232442;
+}
+
 header form {
-    display: inline;
+    display: inline-block;
     float: right;
     text-align: right;
 }

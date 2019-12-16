@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/HeroPage.css';
+import '../css/HeroPage.css';
 
 function FilmCell({ film }) {
     

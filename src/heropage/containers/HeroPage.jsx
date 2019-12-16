@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
-import HeroCell from './HeroCell';
-import BioCell from './BioCell';
-import FilmCell from './FilmCell';
-import '../../css/HeroPage.css';
+import HeroCell from '../components/HeroCell';
+import BioCell from '../components/BioCell';
+import FilmCell from '../components/FilmCell';
+import '../css/HeroPage.css';
+import people from '../resources/people';
 
 function HeroPage(props) {
 
-    const initialFilms  = props.heroes.map(hero => {
+    const initialFilms  = people.map(hero => {
         return hero.films[0];
     });
 
@@ -48,9 +49,10 @@ function HeroPage(props) {
             </tr>
         );
     }
+
     return (
         <table className="table">
-            {props.heroes.map(mapper)}
+            {people.map(mapper)}
         </table>
     );
 }

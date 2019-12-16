@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Header from './common/Header';
+import HeroPage from './heropage/containers/HeroPage';
 import Navigation from './common/Navigation';
-import Main from './main/Main';
 import Footer from './common/Footer';
+
 
 
 
@@ -19,7 +20,7 @@ function App() {
         <div>
             <Header />
             <Navigation onMenuClick={menuClickHandler} />
-            <Main menuButtonClicked={menuButtonClicked} />
+            <HeroPage menuButtonClicked={menuButtonClicked} />
             <Footer />
         </div>
     );
