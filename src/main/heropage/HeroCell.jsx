@@ -1,9 +1,9 @@
 import React from 'react';
 
-function HeroCell({ name, img }) {
+function HeroCell({ id, name, img }) {
     return (
         <td>
-            <h1>{name}</h1>
+            <h1 id={id}>{name}</h1>
             <img src={img} alt={name} />
         </td>
     );
