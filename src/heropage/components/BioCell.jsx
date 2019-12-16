@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/HeroPage.css';
 
-function BioCell({ id, content, menuButtonClicked, films, onLinkClick }) {
+function BioCell({ id, content, films, onLinkClick }) {
 
     const fullBioText = content;
     const trancatedBioText = content.substring(0, 80);
@@ -12,21 +12,8 @@ function BioCell({ id, content, menuButtonClicked, films, onLinkClick }) {
         setCollapse(!isCollapsed);
     }
 
-    if (menuButtonClicked === "films") {
-        return (
-            <td>
-                <p id={id}>{films.map((film, index) => {
-                    return <button
-                        className="film-button"
-                        key={index}
-                        onClick={( (e) => onLinkClick(+e.target.parentNode.id, index))}
-                    >{film.filmName}</button>
-                })}
-                </p>
-            </td >
-        );
-    }
-    else return (
+
+    return (
         <td>
             <p id={id}>{isCollapsed ? trancatedBioText : fullBioText}</p>
             <button
