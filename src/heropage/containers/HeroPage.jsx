@@ -16,9 +16,7 @@ function HeroPage(props) {
     const [filmsToRender, setFilmsToRender] = useState(initialFilms);
 
     function handleFilmPosterClick(heroIndex) {
-        console.log(heroIndex);
         setFilmCellMode(heroIndex);
-        //console.log(PosterClickedIndex);
     }
 
 

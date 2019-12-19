@@ -6,8 +6,6 @@ function FilmCell({ id, films, film, onPosterClick, posterClickedIndex, onLinkCl
     const filmName = film.filmName;
     const filmPoster = film.filmPoster;
 
-    console.log({id, posterClickedIndex});
-
     if (id === posterClickedIndex) {
         return (
             <td>
