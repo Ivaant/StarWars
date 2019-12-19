@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './common/Header';
-import HeroPage from './heropage/containers/HeroPage';
+import HeroPageClass from './heropage/containers/HeroPageClass';
 import Navigation from './common/Navigation';
 import Footer from './common/Footer';
 
@@ -24,7 +24,7 @@ class AppClass extends Component {
              <div>
             <Header />
             <Navigation onMenuClick={this.menuClickHandler} />
-            <HeroPage menuButtonClicked={this.state.menuButtonClicked} />
+            <HeroPageClass menuButtonClicked={this.state.menuButtonClicked} />
             <Footer />
         </div>
         );
