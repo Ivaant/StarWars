@@ -18,19 +18,6 @@ const mapDispatchToProps = dispatch => {
 }
 
 class AppClass extends Component {
-    constructor(props) {
-        super(props);
-        // this.state = {
-        //     menuButtonClicked: "heroes"
-    }
-    // this.menuClickHandler = this.menuClickHandler.bind(this);
-
-
-
-    // menuClickHandler(menuButtonName) {
-    //     this.setState({ menuButtonClicked: menuButtonName });
-    //     console.log(this.state.menuButtonClicked);
-    // }
 
     render() {
         return (
