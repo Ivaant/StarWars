@@ -25,7 +25,8 @@ class HeroPageClass extends Component {
         this.setState({ posterClickedIndex: heroIndex });
     }
 
-    //replace one element in the state filmsToRender with clicked hero and film
+    //replace clicked hero film element in the array filmsToRender 
+    //with clicked heroIndex and filmIndex from array people
     handleFilmClick(heroIndex, filmIndex) {
         this.setState(prevValue => {
             const newFilms = prevValue.filmsToRender.map((heroFilm, i) => {

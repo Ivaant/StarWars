@@ -9,7 +9,7 @@ import { setMainMenuButton } from './redux/actions';
 
 const mapStateToProps = state => ({
     menuButtonClicked: state.menuButtonClicked
-});
+})
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -20,11 +20,11 @@ const mapDispatchToProps = dispatch => {
 class AppClass extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            menuButtonClicked: "heroes"
-        }
-       // this.menuClickHandler = this.menuClickHandler.bind(this);
+        // this.state = {
+        //     menuButtonClicked: "heroes"
     }
+    // this.menuClickHandler = this.menuClickHandler.bind(this);
+
 
 
     // menuClickHandler(menuButtonName) {
