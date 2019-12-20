@@ -3,7 +3,7 @@ import HeroCell from '../components/HeroCell';
 import BioCell from '../components/BioCell';
 import FilmCell from '../components/FilmCell';
 import '../css/HeroPage.css';
-import people from '../resources/people';
+import people from '../../resources/people';
 
 const initialFilms = people.map(hero => {
     return hero.films[0];
