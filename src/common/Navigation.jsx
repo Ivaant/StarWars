@@ -9,7 +9,7 @@ function Navigation(props) {
     const mapper = (name, index) => {
         return (
             <li key={index}><button
-                onClick={(e) => props.onMenuClick(e.target.name)}
+                onClick={props.onMenuClick}
                 name={name}
             >{name.toUpperCase()}</button>
             </li>
