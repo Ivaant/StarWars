@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/HeroPage.css';
 
-function BioCell({ id, content, films, onLinkClick }) {
+function BioCell({ id, content }) {
 
     const fullBioText = content;
     const trancatedBioText = content.substring(0, 80);
