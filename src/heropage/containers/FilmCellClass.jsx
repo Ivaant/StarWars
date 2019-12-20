@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FilmCell from '../components/FilmCell';
-import people from '../resources/people';
+import people from '../../resources/people';
 
 const initialFilms = [];
 
