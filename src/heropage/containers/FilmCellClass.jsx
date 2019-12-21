@@ -1,58 +1,61 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import FilmCell from '../components/FilmCell';
+import { setHeroIndex } from '../../redux/actions';
+import { setFilmsToRender } from '../../redux/actions';
 import people from '../../resources/people';
 
-const initialFilms = [];
+// const mapDispatchToProps = dispatch => {
+//     return {
+//         sendClickedHeroIndex: (heroIndex) => dispatch(setHeroIndex(heroIndex)),
+//         sendFilmsToRender: (filmsToRender) => dispatch(setFilmsToRender(filmsToRender))
+//     }
+// }
+
+// const mapStateToProps = state => ({
+//     posterClickedIndex: state.posterClickedIndex,
+//     filmsToRender: state.filmsToRender
+// })
 
 class FilmCellClass extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            posterClickedIndex: null,
-            filmsToRender: initialFilms
+            isPosterClicked: false,
+            filmClickedIndex: 0
         }
         this.handleFilmPosterClick = this.handleFilmPosterClick.bind(this);
         this.handleFilmClick = this.handleFilmClick.bind(this);
     }
 
-    componentWillMount() {
-        const newFilms = people.map(hero => {
-            return hero.films[0];
-        });
-        this.setState({filmsToRender: newFilms});
+    UNSAFE_componentWillMount() {
+        this.films = people[this.props.id].films;
     }
 
     handleFilmPosterClick(heroIndex) {
-        this.setState({ posterClickedIndex: heroIndex });
+        this.setState({ isPosterClicked: true });
     }
 
     //replace one element in the state filmsToRender with clicked hero and film
-    handleFilmClick(heroIndex, filmIndex) {
-        this.setState(prevValue => {
-            const newFilms = prevValue.filmsToRender.map((heroFilm, i) => {
-                if (i === heroIndex) {
-                    return people[heroIndex].films[filmIndex];
-                }
-                else return heroFilm;
-            });
-            return {
-                posterClickedIndex: null,
-                filmsToRender: newFilms
-            }
+    handleFilmClick(index) {
+        this.setState({
+            filmClickedIndex: index,
+            isPosterClicked: false
         });
     }
 
     render() {
-       return (<FilmCell
+        return (<FilmCell
             id={this.props.id}
-            films={people[this.props.id].films}
-            film={this.state.filmsToRender[this.props.id]}
+            films={this.films}
+            film={this.films[this.state.filmClickedIndex]}
             onPosterClick={this.handleFilmPosterClick}
-            posterClickedIndex={this.state.posterClickedIndex}
+            isPosterClicked={this.state.isPosterClicked}
             onLinkClick={this.handleFilmClick}
         />
-       )
+        )
     }
 }
-
 export default FilmCellClass;
+
+//connect(mapStateToProps, mapDispatchToProps)(
