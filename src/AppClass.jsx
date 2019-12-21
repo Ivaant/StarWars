@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './common/Header';
+import Scroll from './common/Scroll';
 import HeroPageClass from './heropage/containers/HeroPageClass';
 import FilmsPage from './filmspage/FilmsPage';
 import Navigation from './common/Navigation';
@@ -24,11 +25,13 @@ class AppClass extends Component {
             <div>
                 <Header />
                 <Navigation onMenuClick={this.props.menuClickHandler} />
-                {this.props.menuButtonClicked === 'films' ?
-                    <FilmsPage />
-                    :
-                    <HeroPageClass />
-                }
+                <Scroll>
+                    {this.props.menuButtonClicked === 'films' ?
+                        <FilmsPage />
+                        :
+                        <HeroPageClass />
+                    }
+                </Scroll>
                 <Footer />
             </div>
         );

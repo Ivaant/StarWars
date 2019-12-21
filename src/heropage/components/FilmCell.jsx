@@ -1,19 +1,19 @@
 import React from 'react';
 import '../css/HeroPage.css';
 
-function FilmCell({ id, films, film, onPosterClick, posterClickedIndex, onLinkClick }) {
+function FilmCell({ id, films, film, onPosterClick, isPosterClicked, onLinkClick }) {
 
     const filmName = film.filmName;
     const filmPoster = film.filmPoster;
 
-    if (id === posterClickedIndex) {
+    if (isPosterClicked) {
         return (
             <td>
                 <p id={id}>{films.map((film, index) => {
                     return <button
                         className="film-button"
                         key={index}
-                        onClick={((e) => onLinkClick(+e.target.parentNode.id, index))}
+                        onClick={((e) => onLinkClick(index))}
                     >{film.filmName}</button>
                 })}
                 </p>

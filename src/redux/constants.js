@@ -1,1 +1,3 @@
 export const CLICK_MENU_BUTTON = 'CLICK_MENU_BUTTON';
+export const CLICK_POSTER = 'CLICK_POSTER'; 
+export const CLICK_FILM_ITEM = 'CLICK_FILM_ITEM'; 

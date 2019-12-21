@@ -5,10 +5,6 @@ import FilmCellClass from './FilmCellClass';
 import '../css/HeroPage.css';
 import people from '../../resources/people';
 
-// const initialFilms = people.map(hero => {
-//     return hero.films[0];
-// });
-
 class HeroPageClass extends Component {
     
     mapper = (person, index) => {
